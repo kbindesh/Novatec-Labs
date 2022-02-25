@@ -9,10 +9,10 @@ $resourceGoupName = 'novateclabsRG'
 $azureRegion = 'East US'
 $vmName = 'DemoPSVM'
 
-# Create the resource group
+# Create the Azure Resource Group
 New-AzResourceGroup -Name $resourceGoupName -Location $azureRegion -Verbose
 
-# Create the vNet for the VM
+# Create the Azure Virtual Network for the Azure Virtual Machine
 $newSubnetParams = @{
     'Name'          = 'MySubnet'
     'AddressPrefix' = '10.0.1.0/24'
